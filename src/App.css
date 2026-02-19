@@ -1,0 +1,120 @@
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ── Pages ── */
+.page {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}
+
+.page h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  color: var(--color-muted);
+  font-size: 1.1rem;
+}
+
+/* ── Home ── */
+.home-page h1 {
+  font-size: 3.5rem;
+}
+
+/* ── Playground ── */
+.prompt-card {
+  margin-top: 2.5rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 2rem;
+  position: relative;
+}
+
+.prompt-text {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.prompt-card textarea {
+  width: 100%;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  color: var(--color-text);
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  resize: vertical;
+  transition: border-color 0.2s;
+}
+
+.prompt-card textarea:focus {
+  outline: none;
+  border-color: var(--color-accent);
+}
+
+.prompt-actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.btn-primary {
+  background: var(--color-accent);
+  color: #fff;
+  padding: 0.55rem 1.25rem;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: var(--color-accent-hover);
+}
+
+.btn-primary:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--color-muted);
+  padding: 0.55rem 1.25rem;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.btn-secondary:hover {
+  color: var(--color-text);
+  border-color: var(--color-muted);
+}
+
+.submitted blockquote {
+  border-left: 3px solid var(--color-accent);
+  padding-left: 1rem;
+  color: var(--color-muted);
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.prompt-counter {
+  position: absolute;
+  bottom: 1rem;
+  right: 1.25rem;
+  font-size: 0.8rem;
+  color: var(--color-muted);
+}
